@@ -99,7 +99,7 @@ namespace pcl{
       //*    offset_y : the number of overlapping voxels in neighboring subdivisions in y-axis
       //*    offset_z : the number of overlapping voxels in neighboring subdivisions in z-axis
       //*    voxel_size : the length of voxel side (unit: meter)
-      bool setVoxelFilter ( pcl::VoxelGrid<PointT> grid_, const int subdivision_size_ = 0, const int offset_x_ = 0, const int offset_y_ = 0, const int offset_z_ = 0, const float voxel_size_ = 0.01 );
+      virtual bool setVoxelFilter ( pcl::VoxelGrid<PointT> grid_, const int subdivision_size_ = 0, const int offset_x_ = 0, const int offset_y_ = 0, const int offset_z_ = 0, const float voxel_size_ = 0.01 );
 
       //* get the number of subdivisions in x-, y- and z-axis.
       Eigen::Vector3i getSubdivNum(){ return subdiv_b_; };

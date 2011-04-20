@@ -416,11 +416,7 @@ pcl::C3HLAC981Estimation<PointT, PointOutT>::computeFeature (PointCloudOut &outp
 }
 
 template class pcl::C3HLAC117Estimation<pcl::PointXYZRGB, pcl::C3HLACSignature117>;
-template class pcl::C3HLAC117Estimation<pcl::PointXYZRGB, pcl::C3HLACSignature981>;
-template class pcl::C3HLAC981Estimation<pcl::PointXYZRGB, pcl::C3HLACSignature117>;
 template class pcl::C3HLAC981Estimation<pcl::PointXYZRGB, pcl::C3HLACSignature981>;
 
 template class pcl::C3HLAC117Estimation<pcl::PointXYZRGBNormal, pcl::C3HLACSignature117>;
-template class pcl::C3HLAC117Estimation<pcl::PointXYZRGBNormal, pcl::C3HLACSignature981>;
-template class pcl::C3HLAC981Estimation<pcl::PointXYZRGBNormal, pcl::C3HLACSignature117>;
 template class pcl::C3HLAC981Estimation<pcl::PointXYZRGBNormal, pcl::C3HLACSignature981>;
