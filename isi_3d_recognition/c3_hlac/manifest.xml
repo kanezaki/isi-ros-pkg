@@ -1,6 +1,8 @@
 <package>
   <description brief="c3_hlac">
-     c3_hlac
+
+     C3-HLAC feature extraction from color point cloud.
+
   </description>
   <author>Asako Kanezaki</author>
   <license>BSD</license>

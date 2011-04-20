@@ -1,7 +1,7 @@
 <package>
   <description brief="color_voxel_recognition">
 
-     color_voxel_recognition
+     Tools for object detection using C3-HLAC features and linear subspace method.
 
   </description>
   <author>kanezaki</author>

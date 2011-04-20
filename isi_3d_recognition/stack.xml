@@ -2,6 +2,7 @@
   <description brief="ISI 3D Recognition">
 
     ISI 3D Recognition consists of tools for extracting color-and-shape features, solving Principal Component Analysis (PCA), and detecting objects using them.
+     They are developed at ISI lab.
 
   </description>
   <author>Maintained by Kanezaki Asako</author>

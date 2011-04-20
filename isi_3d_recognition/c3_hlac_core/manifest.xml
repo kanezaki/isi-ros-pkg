@@ -1,11 +1,11 @@
 <package>
   <description brief="c3_hlac_core">
 
-     c3_hlac_core
+     ROS wrapper for C3-HLAC feature extraction developed at ISI lab.
 
   </description>
   <author>Kanezaki Asako</author>
-  <license>BSD</license>
+  <license>BSD(non-commercial use)</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/c3_hlac_core</url>
   <depend package="roscpp"/>
