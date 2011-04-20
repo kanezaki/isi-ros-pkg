@@ -1,0 +1,18 @@
+<package>
+  <description brief="c3_hlac_core">
+
+     c3_hlac_core
+
+  </description>
+  <author>Kanezaki Asako</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/c3_hlac_core</url>
+  <depend package="roscpp"/>
+  <export>
+    <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lc3_hlac_core"/>
+  </export>
+
+</package>
+
+

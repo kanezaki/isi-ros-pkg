@@ -1,0 +1,6 @@
+voxel_size: 0.02
+dim: 100
+box_size(scene): 10
+box_size(model): 10
+rotate_num: 1
+c3_hlac_flg: 1

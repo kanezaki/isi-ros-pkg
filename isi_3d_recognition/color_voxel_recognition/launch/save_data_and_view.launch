@@ -1,0 +1,9 @@
+<launch>
+  <arg name="/dir_name" />
+  <arg name="/display_config" />
+  <arg name="/input" default="/camera/rgb/points" />
+  <arg name="/limit_depth" default="" />
+  <!-- node pkg="openni_pcl" type="openni_viewer" name="openni_viewer1" args="~input:=/save_points" /-->
+  <node pkg="rviz" type="rviz" name="rviz1" args="-d $(arg /display_config)" />
+  <node pkg="color_voxel_recognition" type="save_data" name="save_data1" output="screen" args="$(arg /dir_name) $(arg /limit_depth) /input:=$(arg /input)" />
+</launch>

@@ -1,0 +1,60 @@
+Background\ ColorR=0.74902
+Background\ ColorG=0.74902
+Background\ ColorB=0.74902
+Fixed\ Frame=/openni_rgb_optical_frame
+Target\ Frame=/openni_rgb_optical_frame
+Axes.Enabled=0
+Axes.Length=1
+Axes.Radius=0.1
+Axes.Reference\ Frame=<Fixed Frame>
+Markers.Enabled=1
+Markers.Marker\ Topic=/visualization_marker_range
+Markers2.Enabled=1
+Markers2.Marker\ Topic=/visualization_marker
+Point\ Cloud2.Alpha=1
+Point\ Cloud2.Billboard\ Size=0.01
+Point\ Cloud2.Color\ Transformer=RGB8
+Point\ Cloud2.Decay\ Time=0
+Point\ Cloud2.Enabled=1
+Point\ Cloud2.Position\ Transformer=XYZ
+Point\ Cloud2.Selectable=1
+Point\ Cloud2.Style=0
+Point\ Cloud2.Topic=/camera/rgb/points
+Point\ Cloud2..AxisAutocompute\ Value\ Bounds=1
+Point\ Cloud2..AxisAxis=2
+Point\ Cloud2..AxisMax\ Value=3.046
+Point\ Cloud2..AxisMin\ Value=0.768
+Point\ Cloud2..AxisUse\ Fixed\ Frame=1
+Point\ Cloud2..Flat\ ColorColorR=1
+Point\ Cloud2..Flat\ ColorColorG=1
+Point\ Cloud2..Flat\ ColorColorB=1
+Point\ Cloud2..IntensityAutocompute\ Intensity\ Bounds=1
+Point\ Cloud2..IntensityMax\ ColorR=1
+Point\ Cloud2..IntensityMax\ ColorG=1
+Point\ Cloud2..IntensityMax\ ColorB=1
+Point\ Cloud2..IntensityMax\ Intensity=4096
+Point\ Cloud2..IntensityMin\ ColorR=0
+Point\ Cloud2..IntensityMin\ ColorG=0
+Point\ Cloud2..IntensityMin\ ColorB=0
+Point\ Cloud2..IntensityMin\ Intensity=0
+Tool\ 2D\ Nav\ GoalTopic=goal
+Tool\ 2D\ Pose\ EstimateTopic=initialpose
+Camera\ Type=rviz::OrbitViewController
+Camera\ Config=3.14059 6.09594 3.0265 0.174733 0.949687 0.097337
+Property\ Grid\ State=selection=;expanded=.Global Options,Axes.Enabled.Axes.StatusTopStatus,Markers2.Enabled.Markers2.Namespaces,Markers.Enabled.Markers.Namespaces;scrollpos=0,0;splitterpos=133,266;ispageselected=1
+[Display0]
+Name=Axes
+Package=rviz
+ClassName=rviz::AxesDisplay
+[Display1]
+Name=Point Cloud2
+Package=rviz
+ClassName=rviz::PointCloud2Display
+[Display2]
+Name=Markers2
+Package=rviz
+ClassName=rviz::MarkerDisplay
+[Display3]
+Name=Markers
+Package=rviz
+ClassName=rviz::MarkerDisplay

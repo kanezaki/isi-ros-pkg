@@ -1,0 +1,8 @@
+// make it true if you want to save PCA result in ASCII format
+#define ASCII_MODE_P false
+
+// make it false if you don't want to use whitening
+#define WHITENING true
+
+// make it false if you don't want to use multiple similarity (if you want to use CLAFIC instead.)
+#define MULTIPLE_SIMILARITY true

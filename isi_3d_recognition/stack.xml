@@ -1,0 +1,14 @@
+<stack>
+  <description brief="ISI 3D Recognition">
+
+    ISI 3D Recognition consists of tools for extracting color-and-shape features, solving Principal Component Analysis (PCA), and detecting objects using them.
+
+  </description>
+  <author>Maintained by Kanezaki Asako</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/isi_3d_recognition</url>
+  <depend stack="ros" /> <!-- roscpp -->
+  <depend stack="point_cloud_perception" /> <!-- pcl -->
+  <depend stack="common_msgs" /> <!-- visualization_msgs -->
+</stack>

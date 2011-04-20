@@ -1,0 +1,20 @@
+<package>
+  <description brief="color_voxel_recognition">
+
+     color_voxel_recognition
+
+  </description>
+  <author>kanezaki</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/color_voxel_recognition</url>
+  <depend package="roscpp"/>
+  <depend package="pcl"/>
+  <depend package="c3_hlac"/>
+  <depend package="visualization_msgs"/>
+  <export>
+    <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lcolor_voxel_recognition"/>
+  </export>
+</package>
+
+
