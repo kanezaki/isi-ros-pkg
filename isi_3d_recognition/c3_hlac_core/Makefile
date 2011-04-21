@@ -1,8 +1,8 @@
 ARCH = $(shell uname -m)
 ifeq ($(ARCH), x86_64)
-LIBRARY_URL = http://www.isi.imi.i.u-tokyo.ac.jp/~kanezaki/c3_hlac/pcl/x64/libc3_hlac_core.so
+LIBRARY_URL = http://www.isi.imi.i.u-tokyo.ac.jp/software/c3_hlac/pcl/x64/libc3_hlac_core.so
 else
-LIBRARY_URL = http://www.isi.imi.i.u-tokyo.ac.jp/~kanezaki/c3_hlac/pcl/x86/libc3_hlac_core.so
+LIBRARY_URL = http://www.isi.imi.i.u-tokyo.ac.jp/software/c3_hlac/pcl/x86/libc3_hlac_core.so
 endif
 
 $(shell mkdir -p $(shell rospack find c3_hlac_core)/lib)
