@@ -1,7 +1,7 @@
 <package>
   <description brief="c3_hlac_core">
 
-     ROS wrapper for C3-HLAC feature extraction developed at ISI lab.
+     ROS wrapper for core functions in C3-HLAC feature extraction.
 
   </description>
   <author>Kanezaki Asako</author>
