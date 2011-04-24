@@ -1,18 +1,19 @@
-# Library for sliding object detection by C3-HLAC and subspace method.
-#   works with Kinect and ni package
-#   please rosmake openni_camera and openni_pcl
+# Library for sliding object detection using C3-HLAC and linear subspace method.
+#  This application works with Kinect and openni_kinect package (http://www.ros.org/wiki/openni_kinect)
 
 1. connect Kinect and "roslaunch openni_camera openni_node.launch" -- terminal 1
 2. in another terminal,
 
      2.1 learn the environment  (necessary for only once)
          "bash `rospack find color_voxel_recognition`/demos/SH/learn_env.sh"
-         - Enter for saving data, and "Ctrl+C" ONLY ONCE for quit
+         - Press "Enter" key for saving data, and "Ctrl+C" ONLY ONCE for quit
 
      2.2 learn objects (once for each object)
          "bash `rospack find color_voxel_recognition`/demos/SH/learn_obj.sh <object_name>"
          - Put the target object closest from Kinect and confirm the green box contains only the object.
-         - Enter for saving data, and "Ctrl+C" ONLY ONCE for quit
+         - Press "Enter" key for saving data, and "Ctrl+C" ONLY ONCE for quit
 
      2.3 detect one object
-         "bash `rospack find color_voxel_recognition`/demos/SH/detect_test.sh <object_name> <similarity_threshold> <bounding box size>"
+         "bash `rospack find color_voxel_recognition`/demos/SH/detect_test.sh <object_name> <similarity_threshold> <bounding_box_size>"
+         - "similarity_threshold" should be between 0 and 1.
+         - "bounding_box_size" should be given in metric unit.
