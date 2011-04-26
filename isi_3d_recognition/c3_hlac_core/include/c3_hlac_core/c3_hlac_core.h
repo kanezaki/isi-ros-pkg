@@ -2,6 +2,8 @@
  * Software License Agreement (BSD License for non-commercial use)
  *
  *  Copyright (c) 2011, Asako Kanezaki <kanezaki@isi.imi.i.u-tokyo.ac.jp>
+ *  Tatsuya Harada <harada@isi.imi.i.u-tokyo.ac.jp>, 
+ *  Yasuo Kuniyoshi <kuniyosh@isi.imi.i.u-tokyo.ac.jp>
  *  All rights reserved.
  *
  * NOTE: This license is for non-commercial purpose use only.

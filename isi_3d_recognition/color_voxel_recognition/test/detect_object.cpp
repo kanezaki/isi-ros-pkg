@@ -2,6 +2,8 @@
  * Software License Agreement (BSD License)
  *
  *  Copyright (c) 2011, Asako Kanezaki <kanezaki@isi.imi.i.u-tokyo.ac.jp>
+ *  Tatsuya Harada <harada@isi.imi.i.u-tokyo.ac.jp>, 
+ *  Yasuo Kuniyoshi <kuniyosh@isi.imi.i.u-tokyo.ac.jp>
  *  All rights reserved.
  *
  *  Redistribution and use in source and binary forms, with or without
@@ -272,7 +274,7 @@ int main(int argc, char* argv[]) {
   search_obj.setThreshold( atoi(argv[3]) );
   search_obj.readAxis( argv[4], dim, dim_model, ASCII_MODE_P, MULTIPLE_SIMILARITY );
 
-  // read projection axis of the target object's subspace
+  // read projection axis for feature compression
   PCA pca;
   sprintf( tmpname, "%s/models/compress_axis", argv[1] );
   pca.read( tmpname, ASCII_MODE_P );
