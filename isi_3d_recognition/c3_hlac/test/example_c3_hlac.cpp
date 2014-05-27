@@ -41,7 +41,7 @@
 
 int main( int argc, char** argv ){
   if( argc != 2 ){
-    ROS_ERROR ("Need one parameter! Syntax is: %s {input_pointcloud_filename.pcd}\n", argv[0]);
+    std::cerr << "Need one parameter! Syntax is: " << argv[0] << " {input_pointcloud_filename.pcd}" <<std::endl;
     return(-1);
   }
 
@@ -51,10 +51,10 @@ int main( int argc, char** argv ){
   //* read
   pcl::PointCloud<pcl::PointXYZRGB> input_cloud;
   if (pcl::io::loadPCDFile (argv[1], input_cloud) == -1){
-    ROS_ERROR ("Couldn't read file %s",argv[1]);
+    std::cerr << "Couldn't read file " << argv[1] << std::endl;
     return (-1);
   }
-  ROS_INFO ("Loaded %d data points from %s with the following fields: %s", (int)(input_cloud.width * input_cloud.height), argv[1], pcl::getFieldsList (input_cloud).c_str ());
+  std::cout << "Loaded " << (int)(input_cloud.width * input_cloud.height) << " data points from " << argv[1] << " with the following fields: " << pcl::getFieldsList (input_cloud).c_str () << std::endl;
 
   //* voxelize
   pcl::VoxelGrid<pcl::PointXYZRGB> grid;

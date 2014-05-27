@@ -326,6 +326,11 @@ pcl::C3HLAC117Estimation<PointT, PointOutT>::computeFeature (PointCloudOut &outp
   normalizeC3HLAC( output );
 }
 
+template <typename PointT, typename PointOutT> void
+pcl::C3HLAC117Estimation<PointT, PointOutT>::computeFeatureEigen (pcl::PointCloud<Eigen::MatrixXf> &output)
+{
+}
+
 //*******************************************************//
 //* functions for C3HLACSignature981 (rotation-variant) *//
 //*******************************************************//
@@ -416,6 +421,11 @@ pcl::C3HLAC981Estimation<PointT, PointOutT>::computeFeature (PointCloudOut &outp
   for (size_t idx = 0; idx < indices_->size (); ++idx)
     computeC3HLAC (*surface_, output, (*indices_)[idx] );
   normalizeC3HLAC( output );
+}
+
+template <typename PointT, typename PointOutT> void
+pcl::C3HLAC981Estimation<PointT, PointOutT>::computeFeatureEigen (pcl::PointCloud<Eigen::MatrixXf> &output)
+{
 }
 
 template class pcl::C3HLAC117Estimation<pcl::PointXYZRGB, pcl::C3HLACSignature117>;

@@ -127,6 +127,7 @@ namespace pcl{
       virtual void computeC3HLAC ( const pcl::PointCloud<PointT> &cloud, PointCloudOut &output, const int center_idx );
       virtual void normalizeC3HLAC ( PointCloudOut &output );
       virtual void computeFeature (PointCloudOut &output);
+      virtual void computeFeatureEigen (pcl::PointCloud<Eigen::MatrixXf> &output);
 
     protected:
       float voxel_size;
@@ -193,6 +194,7 @@ namespace pcl{
       virtual void computeC3HLAC ( const pcl::PointCloud<PointT> &cloud, PointCloudOut &output, const int center_idx );
       virtual void normalizeC3HLAC ( PointCloudOut &output );
       virtual void computeFeature (PointCloudOut &output);
+      virtual void computeFeatureEigen (pcl::PointCloud<Eigen::MatrixXf> &output);
 
     protected:
       using C3HLAC117Estimation<PointT, PointOutT>::voxel_size;

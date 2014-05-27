@@ -9,7 +9,7 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/c3_hlac</url>
   <depend package="roscpp"/>
-  <depend package="pcl"/>
+  <depend package="pcl_ros"/>
   <depend package="c3_hlac_core"/>
   <export>
     <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lc3_hlac"/>

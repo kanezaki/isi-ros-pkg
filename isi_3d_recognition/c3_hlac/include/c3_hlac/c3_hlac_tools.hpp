@@ -141,7 +141,7 @@ Eigen::Vector3i extractC3HLACSignature981(pcl::VoxelGrid<PointT> grid, pcl::Poin
   pcl::C3HLAC981Estimation<PointT, pcl::C3HLACSignature981> c3_hlac_;
 
   c3_hlac_.setRadiusSearch (0.000000001); // not used actually.
-  c3_hlac_.setSearchMethod ( boost::make_shared<pcl::KdTreeFLANN<PointT> > () ); // not used actually.
+  //c3_hlac_.setSearchMethod ( boost::make_shared<pcl::KdTreeFLANN<PointT> > () ); // not used actually.
   c3_hlac_.setColorThreshold( color_threshold_r, color_threshold_g, color_threshold_b );
   if( c3_hlac_.setVoxelFilter (grid, subdivision_size, offset_x, offset_y, offset_z, voxel_size) ){
     c3_hlac_.setInputCloud ( cloud.makeShared() );
@@ -149,7 +149,7 @@ Eigen::Vector3i extractC3HLACSignature981(pcl::VoxelGrid<PointT> grid, pcl::Poin
     c3_hlac_.compute( c3_hlac_signature );
     t2 = my_clock();
 #ifndef QUIET
-    ROS_INFO (" %d c3_hlac estimated. (%f sec)", (int)c3_hlac_signature.points.size (), t2-t1);
+    std::cout << (int)c3_hlac_signature.points.size () << " c3_hlac estimated. (" << t2-t1 << " sec)" << std::endl;
 #endif
     const int hist_num = c3_hlac_signature.points.size();
     feature.resize( hist_num );
@@ -176,7 +176,7 @@ Eigen::Vector3i extractC3HLACSignature117(pcl::VoxelGrid<PointT> grid, pcl::Poin
   pcl::C3HLAC117Estimation<PointT, pcl::C3HLACSignature117> c3_hlac_;
 
   c3_hlac_.setRadiusSearch (0.000000001); // not used actually.
-  c3_hlac_.setSearchMethod ( boost::make_shared<pcl::KdTreeFLANN<PointT> > () ); // not used actually.
+  //c3_hlac_.setSearchMethod ( boost::make_shared<pcl::KdTreeFLANN<PointT> > () ); // not used actually.
   c3_hlac_.setColorThreshold( color_threshold_r, color_threshold_g, color_threshold_b );
   if( c3_hlac_.setVoxelFilter (grid, subdivision_size, offset_x, offset_y, offset_z, voxel_size) ){
     c3_hlac_.setInputCloud ( cloud.makeShared() );
@@ -184,7 +184,7 @@ Eigen::Vector3i extractC3HLACSignature117(pcl::VoxelGrid<PointT> grid, pcl::Poin
     c3_hlac_.compute( c3_hlac_signature );
     t2 = my_clock();
 #ifndef QUIET
-    ROS_INFO (" %d c3_hlac estimated. (%f sec)", (int)c3_hlac_signature.points.size (), t2-t1);
+    std::cout << (int)c3_hlac_signature.points.size () << " c3_hlac estimated. (" << t2-t1 << " sec)" << std::endl;
 #endif
     const int hist_num = c3_hlac_signature.points.size();
     feature.resize( hist_num );

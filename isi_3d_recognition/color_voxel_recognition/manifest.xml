@@ -9,7 +9,7 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/color_voxel_recognition</url>
   <depend package="roscpp"/>
-  <depend package="pcl"/>
+  <depend package="pcl_ros"/>
   <depend package="c3_hlac"/>
   <depend package="visualization_msgs"/>
   <export>

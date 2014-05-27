@@ -47,8 +47,7 @@
 #include <float.h>
 #include <color_voxel_recognition/FILE_MODE>
 #include <ros/ros.h>
-#include <pcl/point_types.h>
-#include <pcl/io/pcd_io.h>
+#include <pcl_ros/io/pcd_io.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/select.h>

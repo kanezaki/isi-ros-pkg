@@ -44,7 +44,7 @@
 #include <pcl/features/feature.h>
 #include <pcl/io/pcd_io.h>
 #include <pcl/features/normal_3d.h>
-#include <pcl/features/rsd.h>
+//#include <pcl/features/rsd.h>
 
 //-----------
 //* time
